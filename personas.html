@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://use.typekit.net/qfb7jsv.css">
+    <title>Josiah Carberry</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="project-page-styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <body>
+    <div class="topbar-container">
+      <div class="topbar">
+          <a href="index.html" class="topbar-button">Josiah Carberry</a>
+          <a href="about.html" class="topbar-button">About</a>
+      </div>
+    </div>
+    <div class="text-column">
+      <div>
+        <div class="section">
+            <h1>Developing User Personas</h1>
+            <img class="fourth">
+            <h2>Overview</h2>
+            <p>Critical to UI/UX design is the ability to step into a user's shoes. This is because we are always designing web pages or mobile apps for real or imagined people; it is impossible to design something in a vacuum. For this reason, I took the time to practice creating user personas based on real life interviews of people who had just interacted with a public, real-world user interface. I then created a storyboard for one of the personas I'd come up with to better understand that persona and imagine how I could redesign the interface to better accommodate them.</p>
+        </div>
+
+        <div class="section">
+            <h1>Choosing an Interface</h1>
+            <h2>Requirements</h2>
+            <p> My first step was to select an interface in public view where I could observe others and not make them uncomfortable. I also wanted to avoid an interface that only had simple interactive components like faucets so that I could more engaging questions in my interviews.</p>
+            <h2>The CVS Self-Checkout Machine</h2>
+            <p>I decided to use the CVS self-checkout machine for my public interface. It could easily be observed and had a fairly complex user flow. I also personally had frustrating experiences using it so it seemed interesting to imagine how it could be improved. I made a quick sketch of the interface to mark its key features and better visualize it.</p>
+            <img class="shadow" src="./assets/interface.png">
+            <p class="after-paragraph-spacing">This interface is trying to give users a speedy self-guided checkout experience. It has to guide users through the various stages of checkout.</p>
+            <p>The main screen prompts the user to move through the stages: scanning items, using coupons, payment, and bagging. The IR scanner front and center is used for scanning barcodes on the items in the customer's cart. Next to the IR scanner there is a highlighted area where coupons can be fed in. There is a small side mounted screen and keypad combo for processing various forms of payment. This machine also makes sure that the weights of the items placed in the bagging area match expectations.</p>
+        </div>
+
+        <div class="section">
+            <h1>Understanding User Interactions</h1>
+            <h2>Observations From Afar</h2>
+            <p class="after-paragraph-spacing">To better understand how users interact with the interface I observed people using it. I made sure to make note of any struggles and difficulties they encountered. Here is a brief list of the observations I made:</p>
+            <ul>
+                <li>When problems arise with the interface, there is not much time given for users to fix the problems. Once an error occurs, the machine locks up and repeatedly says “please wait, help is on the way” while the LED bar at the top flashes orange. Each customer that encountered this seemed frustrated and embarrassed, looking around apologetically at everyone in the checkout area.</li>
+                <li>Some customers were also confused with the bagging area, which does not allow a bag to be placed on it as this throws off the weight it's tracking. Many customers placed a bag on the platform and were then prompted to “remove the unscanned item from the bagging area.”</li>
+                <li>Most customers seem to be frequent users of the interface and are able to quickly select buttons on the screen through muscle memory once their items have been scanned.</li>
+            </ul>
+            <h2>User Interviews</h2>
+            <p class="after-paragraph-spacing">Once I had made my observations I conducted interviews to understand the user's perspectives on the interface. Below are the questions I asked as well as summarized answers</p>
+            <ol>
+                <li>Why did you opt for self checkout over employee checkout?
+                    <ul>
+                        <li>Some users would go to self checkout based on the size or number of items they had in their cart.</li>
+                        <li>Others would go to self checkout because the items themselves were embarrassing or personal.</li>
+                        <li>Some expressed that they didn't always feel up to the social interaction of employee checkout.</li>
+                        <li>All felt that self checkout would be quicker than employee checkout.</li>
+                    </ul>
+                </li>
+                <li> In what circumstances would you opt for employee checkout instead?
+                    <ul>
+                        <li>If they were buying something they knew would require employee assistance anyway (like age restricted items). This shows that having to interact with an employee defeated the purpose of self checkout.</li>
+                        <li>If the line was very long for self checkout it no longer seemed like a quicker option.</li>
+                    </ul>
+                </li>
+                <li> When something goes wrong with the checkout process, how confident are you that you can resolve the issue before the interface prompts for an employee assistant?
+                    <ul>
+                        <li>Everyone was only somewhat confident they would be able to before an employee was called over. This highlights the lack of trust the machine has in the customers.</li>
+                        <li>The “unscanned item in bagging area” error seemed most likely to be resolved in time, while an item not being in the system always required employee assistance.</li>
+                    </ul>
+                </li>
+                <li> How satisfied are you with the interface's method of calling over an employee?
+                    <ul> 
+                        <li>Everyone was frustrated and embarrassed by the method of calling over an employee. One person noted in particular that it felt like “public shaming.”</li>
+                        <li>Some noted that even though it was loud and obnoxious it was generally ineffective at getting an employee's attention, and often required seeking out one in the store.</li>
+                        <li>The main point here is that these errors defeated the purpose of self checkout for the customers and made them wish they had opted for employee checkout instead.</li>
+                    </ul>
+                </li>
+                <li> What is your interpretation of the “bagging area” described by the interface?
+                    <ul> 
+                        <li>Customers correctly identified the scale to the right side of the kiosk as the bagging area.</li>
+                        <li>All described it as a place to put items after being scanned.</li>
+                        <li>If they attempted to actually bag items there they noted that the machine would complain about the weight of the bag on the scale.</li>
+                    </ul>
+                </li>
+                <li> Once all your items have been scanned, are you quickly able to make payment and clear the kiosk for the next person in line?
+                    <ul> 
+                        <li>Everyone felt they could checkout extremely quickly once their items were scanned. The interface was responsive and let them do exactly what they wanted to do.</li>
+                        <li>This highlights the fact that the interface is polished when nothing unexpected happens. If the error handling and edge cases could be improved it would make the user experience drastically better.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h1>Creating User Personas</h1>
+            <h2>Context</h2>
+            <p>The goal of a user persona is to encapsulate the overarching trends of what I discovered in my observations and interviews. They should not be carbon copies of a specific person I talked to, rather something general. A good persona is one that someone can act out with confidence in different scenarios. To better understand each persona I constructed a four-quadrant empathy map to descibe what the users think, feel, say, and do.</p>
+            <h2>Embarrassed Eric</h2>
+            <p class="after-paragraph-spacing">My first persona was Embarrassed Eric. Many of the users noted in the interview that if they were buying personal items they would be more likely to use self checkout, which I inferred was because it is embarrassing to interact with an employee and show them the items you are purchasing.</p>
+            <p>Embarrassed Eric is a shy student trying to buy items he feels awkward having in his cart. He wants to keep his items private and check out as quick as possible.</p>
+            <img src="./assets/embarrassed-eric.png" class="shadow">
+            <h2>Busy Ben</h2>
+            <p class="after-paragraph-spacing">My second persona was Busy Ben. This was trying to archetype the customer who picks up only a few items and wants to get through checkout as quick as possible. This was the case for many of the users I observed. This was also backed up with the interviews where people's primary reason for choosing self-checkout was getting through checkout quicker.</p>
+            <p>Busy Ben is a student just trying to get back to his dorm to finish his assignment. He had to run out to CVS and get one thing he'd been putting off for days.</p>
+            <img src="./assets/busy-ben.png" class="shadow">
+        </div>
+
+        <div class="section">
+            <h1>Creating Storyboards</h1>
+            <h2>Context</h2>
+            <p>The goal for storyboarding is the understand the entire user journey for your persona. This helps you better understand the pain points with the user interface and allows you to create designs that cater specifically to your target audience.</p>
+            <h2>Storyboard for Busy Ben</h2>
+            <div class="gallery-container">
+                <img class="gallery-item shadow" src="./assets/storyboard_part_1.png" alt="Ben is about to start working on an urgent homework assignment when he releases he's out of shampoo. If he doesn't go to CVS to get more now, he won't have some tonight.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_2.png" alt="He throws out the empty bottle and rushes out the door to CVS. He hopes it will be a quick trip so he can get back to work.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_3.png" alt="Ben gets to the store and quickly goes inside. He knows exactly what aisle his shampoo is in so he rushes over there and grabs it. He feels confident that everything is going smoothly.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_4.png" alt="Ben goes to the checkout area. He sees a long line for employee checkout which worries him, so he goes to self checkout instead to be quick. The machine says to scan the barcode so he locates that on his shampoo.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_5.png" alt="When he scans his item, the machine immediately errors out and tells him it does not recognize it. The kiosk starts flashing orange and repeating the line “please wait, help is on the way.” Ben is embarrassed and frustrated. He justs wants to get home and do his work.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_6.png" alt="Even though the machine is loud, it seems very ineffective at getting an employee. Ben feels impatient and frustrated and has to go seek one out for help. He apologetically explains the situation. The attendant goes over to the machine, scans their card, and manually finds and enters the price of the shampoo.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_7.png" alt="Once the item is properly scanned, he places it in the bagging area and proceeds with checkout. The rest of the process is smooth after he hits “Finish and Pay” which is a great relief to Ben. He quickly uses his credit card to complete the transaction.">  
+                <img class="gallery-item shadow" src="./assets/storyboard_part_8.png" alt="Ben puts his item in a bag, and heads out of the CVS to go back to his dorm. The trip took longer than expected which makes him more stressed about his assignment.">  
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Conclusion</h1>
+            <h2>Key Takeaways</h2>
+            <p>This project cemented in my mind the importance of understanding your users when designing an interface. Before this project I felt that it was a skippable step that was mostly a formality, but I now understand that good design can only be achieved when you are designing for the correct people. Going forward from this process I always make sure to understand my target audience and cater to their interests.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

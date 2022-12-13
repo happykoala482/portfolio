@@ -1,0 +1,211 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    min-height: 100%;
+    background-color: #F6FAFF;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+.topbar {
+    max-width: 1240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-button {
+    text-decoration: none;
+    font-family: swear-display-cilati, sans-serif;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: normal;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.45s;
+}
+
+.topbar-button:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/header_background.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    .topbar-button {
+        font-size: 2rem;
+    }
+
+    .header {
+        height: 500px;
+    }
+    .grid {
+        height: 100%;
+        width: 100%;
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .column {
+        height: 100%;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selected-work-a {
+        width: calc(50% - 100px);
+    }
+
+    .gallery-container {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .topbar-button {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        height: 750px;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:end;
+        margin: 100px;
+    }
+    .column {
+        margin: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selected-work-a {
+        width: calc(100% - 100px);
+    }
+    
+    .gallery-container {
+        padding: 0px;
+    }
+}
+
+
+.profile-picture {
+    width: 200px;
+    width: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.selected-work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: degular,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe center;
+
+}
+
+.first {
+    background-image: url("./assets/Responsive\ Redesign.png");
+}
+
+.second {
+    background-image: url("./assets/Iterative\ Design.png");
+}
+
+.third {
+    background-image: url("./assets/Inequality\ on\ the\ East\ Side.png");
+}
+
+.fourth {
+    background-image: url("./assets/Personas.png");
+}
+
+.selected-work-a {
+    box-sizing: border-box;
+    aspect-ratio: 1;
+    background-size: cover;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 50px;
+    font-family: swear-display-cilati, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #CBE0FF;
+    padding: 30px;
+    transition: color 0.45s, background-image 0.45s;
+}
+
+.selected-work-a:hover {
+    color: rgba(0, 0, 0, 1);
+    background-image: url("./assets/hover.png");
+}

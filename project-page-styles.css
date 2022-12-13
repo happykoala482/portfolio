@@ -1,0 +1,260 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    min-height: 100%;
+    background-color: #F6FAFF;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+.topbar-container {
+    top: 0;
+    z-index:99;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.topbar {
+    max-width: 1240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-button {
+    text-decoration: none;
+    font-family: swear-display-cilati, sans-serif;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: normal;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.45s;
+}
+
+.topbar-button:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.text-column {
+    width: 50%;
+}
+
+h1 {
+    font-family: degular,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: degular,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.green {
+    color: #02C093;
+}
+
+.blue {
+    color: #1B91FF;
+}
+
+.red {
+    color: #FF5656;
+}
+
+.gold {
+    color: #CEA100;
+}
+
+p, li {
+    font-family: degular,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.after-paragraph-spacing {
+    padding-bottom: 15px;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.first {
+    background-image: url("./assets/Responsive\ Redesign.png");
+    aspect-ratio: 1.5;
+}
+
+.second {
+    background-image: url("./assets/Iterative\ Design.png");
+    aspect-ratio: 1.5;
+}
+
+.third {
+    background-image: url("./assets/Inequality\ on\ the\ East\ Side.png");
+    aspect-ratio: 1.5;
+    background-position: 50% 0%;
+}
+
+.fourth {
+    background-image: url("./assets/Personas.png");
+    aspect-ratio: 1.5;
+    background-position: 50% 0%;
+}
+
+.shadow {
+    /* border-radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* box-shadow */
+    -webkit-box-shadow: rgba(0,0,0,0.15) 0px 0 10px;
+    -moz-box-shadow: rgba(0,0,0,0.15) 0 0 10px;
+    box-shadow: rgba(0,0,0,0.15) 0 0 10px;
+}
+
+.no-radius {
+    /* border-radius */
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+
+.section {
+    margin-bottom: 100px;
+}
+
+iframe {
+    margin-top: 30px;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .topbar-button {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .topbar-button {
+        font-size: 1.5rem;
+    }
+}
+
+.slideshow {
+    width: 100%;
+    aspect-ratio: 1.5;
+    position: relative;
+}
+
+.slideshow-buttons {
+    width: 110%;
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-button, .right-button {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    width: 20px;
+    background-color: #5f5f5f;
+    color: white;
+}
+
+.left-button:hover, .right-button:hover {
+    text-align: center;
+    width: 20px;
+    background-color: #000;
+    color: white;
+}
+   
+.video {
+    width: 100%;
+    aspect-ratio: 1.8;
+}
+
+video {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    width: 381px;
+    aspect-ratio: 0.66;
+    padding: 0px;
+    margin: 20px;
+    background-color: white;
+}
+
+.gallery-container {
+/* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    position: relative;
+    left: -30%;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe center;
+}
